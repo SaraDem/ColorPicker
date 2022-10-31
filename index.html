@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+
+    margin: 0;
+}
+
+</style>
+<body id="changingBg">
+    
+    <a  class = "colorButton" href="#">red</a>
+
+    <script type="text/javascript">
+        let btn = document.querySelector(".colorButton")
+        btn.addEventListener("click", function(e) {
+            e.preventDefault()
+            console.log("Clicked")
+            
+            let target = document.querySelector("changingBg")
+            console.log(target)
+            target.style.backgroudColor = btn.innerText
+        })
+    </script>
+</body>
+</html>
