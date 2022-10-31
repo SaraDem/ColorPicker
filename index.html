@@ -12,10 +12,21 @@
     margin: 0;
 }
 
+.hidden  {
+    display: none;
+}
+.colorBtn {
+    display:  inline-block;
+    width: 40px;
+    height: 60px;
+}
+
 </style>
 <body id="changingBg">
+    <h1>PICK A COLOR</h1>
+    <h3>Scegli un colore per cambiare lo sfondo della pagina</h3>
+    <a  class = "colorButton" href="#">red</a> red
     
-    <a  class = "colorButton" href="#">red</a>
 
     <script type="text/javascript">
         let btn = document.querySelector(".colorButton")
@@ -24,7 +35,7 @@
             console.log("Clicked")
             
             let target = document.querySelector("changingBg")
-            console.log(target)
+            console.log(btn.innerText)
             target.style.backgroudColor = btn.innerText
         })
     </script>
