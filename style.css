@@ -1,6 +1,10 @@
-body{
-    margin-left: auto;
-    margin-top: auto;
+.container{
+    text-align: center;
+    margin: 0 auto;
+    width: auto;
+    padding: 20px;
+    color: #111;
+    margin-top: 15%;
 }
 
 .hidden  {
@@ -13,5 +17,8 @@ body{
     margin-left: auto;
     margin-top: auto;
     border-style: solid;
+    
 }
+
+
 
