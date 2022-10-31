@@ -12,24 +12,22 @@
     <div class=" container">
     <h1>PICK A COLOR</h1>
     <h3>Scegli un colore per cambiare lo sfondo della pagina</h3>
-    <button  class = "colorButton" href="#">red</button>
-    <button class = "colorButton" href="#">blue</button>
-    <button class = "colorButton" href="#">yellow</button>
-    <button class = "colorButton" href="#">pink</button>
-    <button class = "colorButton" href="#">violet</button>
-    <button class = "colorButton" href="#">green</button>    
+    
+    <button onclick="changeColor('blue')" class="blue">Blue</button>
+    <button onclick="changeColor('green')" class="green">Green</button>
+    <button onclick="changeColor('orangered')" class="orange">Orange</button>
+    <button onclick="changeColor('pink')" class="blue">Pink</button>
+    <button onclick="changeColor('violet')" class="green">Violet</button>
+    <button onclick="changeColor('yellow')" class="orange">Yellow</button>
+  
     </div>
 
     <script type="text/javascript">
-        let button = document.querySelector(".colorButton")
-        btn.addEventListener("click", function(e) {
-            e.preventDefault()
-            console.log("Clicked")
-
-            let target = document.querySelector("changingBg")
-            console.log(btn.innerText)
-            target.style.backgroudColor = btn.innerText
-        })
+        let name = document.querySelector(".color");
+        function changeColor()  {
+            color.style.color = "blue";
+        }
+        
     </script>
 </body>
 </html>
