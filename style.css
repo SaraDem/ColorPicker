@@ -1,6 +1,10 @@
-*{
-
-    margin: 0;
+.container{
+    text-align: center;
+    margin: 0 auto;
+    width: auto;
+    padding: 20px;
+    color: #111;
+    margin-top: 15%;
 }
 
 .hidden  {
@@ -10,4 +14,11 @@
     display:  inline-block;
     width: 40px;
     height: 60px;
+    margin-left: auto;
+    margin-top: auto;
+    border-style: solid;
+    
 }
+
+
+
